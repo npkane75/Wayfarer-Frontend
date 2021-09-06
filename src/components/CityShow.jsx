@@ -22,7 +22,11 @@ function CityShow(props) {
     const cityPosts = cityInfo.posts.map((onePost, idx) => {
         // console.log(cityInfo)
         return(
-            <Post key = {idx} onePost = {onePost} cityId = {cityInfo._id}/>
+            <div>
+                <Post key = {idx} onePost = {onePost} cityId = {cityInfo._id}/>
+                {/* still need to create route and link and create comment form*/}
+                <button>Comment</button>
+            </div>
         )
     })
 
